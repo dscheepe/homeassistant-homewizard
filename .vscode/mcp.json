@@ -1,0 +1,23 @@
+{
+  "servers": {
+    "filesystem": {
+      "type": "stdio",
+      "command": "C:\\Users\\dirk\\AppData\\Roaming\\npm\\mcp-server-filesystem.cmd",
+      "args": [
+        "${workspaceFolder}"
+      ]
+    },
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp"
+      ]
+    },
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp"
+    }
+  }
+}
